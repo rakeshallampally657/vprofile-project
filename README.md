@@ -14,7 +14,7 @@
 - MySQL
 - Memcached
 - Rabbitmq
-- ElasticSearch
+- ElasticSearch 2
 # Database
 Here,we used Mysql DB 
 sql dump file:
