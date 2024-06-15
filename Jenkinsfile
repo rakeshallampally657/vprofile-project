@@ -33,6 +33,7 @@ pipeline {
             echo "Now archiving"
             archiveArtifacts artifacts: '**/*.war'
             }}
+             }
 
             stage('Test'){
             steps{
@@ -45,7 +46,7 @@ pipeline {
                         }
 
 
-        }
+
 
         }
 
