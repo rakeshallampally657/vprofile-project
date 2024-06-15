@@ -1,5 +1,5 @@
 pipeline {
-    
+
 	agent any
 
 	tools {
@@ -13,15 +13,16 @@ pipeline {
         NEXUS_USER = 'admin'
         NEXUS_PASS = 'admin'
         RELEASE_REPO = 'vprofile-release'
-        CENTRAL_REPO = 'vpro-maven-central'
-        NEXUSIP = '172.31.53.124'
+        CENTRAL_REPO = 'vpro-mven-central'
+        NEXUSIP = '172.31.47.217'
         NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'vpro-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
         }
-	
+
     stages{
-        
+
+
         stage('BUILD'){
             steps {
                 sh 'mvn -s settings.xml -DskipTests install'
